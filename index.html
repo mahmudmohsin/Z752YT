@@ -322,13 +322,8 @@
     	}
     	})
     	Z.addEventListener("click", function(){
-    	Z.style.background='#39c81f';
-    	const utterance = new SpeechSynthesisUtterance();
-    	utterance.text = "Z";
-    	window.speechSynthesis.speak(utterance);
-    	utterance.onend=function(){
-    	Z.style.background='#fff';
-    	}
+            Core.speak("A for apple");
+    	
     	})
         Core.speak("A for apple");
     </script>
