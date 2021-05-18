@@ -223,6 +223,7 @@ A.addEventListener("click", function(){
     	A.style.background='#39c81f';
     	const utterance = new SpeechSynthesisUtterance();
     	utterance.text = "A. A for. apple";
+Core.speak("A. A for, Apple");
     	window.speechSynthesis.speak(utterance);
     	utterance.onend=function(){
     	A.style.background='#fff';
