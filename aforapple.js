@@ -217,14 +217,15 @@ imgZ.onclick = function(){
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
 }
-
+Core.speak("A for apple");
 
 A.addEventListener("click", function(){
     	A.style.background='#39c81f';
     	const utterance = new SpeechSynthesisUtterance();
     	utterance.text = "A. A for. apple";
-Core.speak("A. A for, Apple");
+Core.speak("A for apple");
     	window.speechSynthesis.speak(utterance);
+	Core.speak("A for apple");
     	utterance.onend=function(){
     	A.style.background='#fff';
     	}
