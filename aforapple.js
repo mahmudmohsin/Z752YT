@@ -59,7 +59,7 @@ var captionText = document.getElementById("caption");
     	let Y = document.getElementById("Y");
     	let Z = document.getElementById("Z");
     	
-
+Core.speak("A for apple");
 
 imgA.onclick = function(){
     modal.style.display = "block";
