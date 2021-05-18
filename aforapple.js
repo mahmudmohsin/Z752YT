@@ -59,7 +59,7 @@ var captionText = document.getElementById("caption");
     	let Y = document.getElementById("Y");
     	let Z = document.getElementById("Z");
     	
-Core.speak("A for apple");
+
 
 imgA.onclick = function(){
     modal.style.display = "block";
@@ -217,13 +217,12 @@ imgZ.onclick = function(){
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
 }
-Core.speak("A for apple");
 
 A.addEventListener("click", function(){
     	A.style.background='#39c81f';
     	const utterance = new SpeechSynthesisUtterance();
     	utterance.text = "A. A for. apple";
-Core.speak("A for apple");
+
     	window.speechSynthesis.speak(utterance);
 	Core.speak("A for apple");
     	utterance.onend=function(){
