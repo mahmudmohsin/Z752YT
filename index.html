@@ -316,7 +316,7 @@
     	Y.style.background='#39c81f';
     	const utterance = new SpeechSynthesisUtterance();
     	utterance.text = "Y";
-    	window.speechSynthesis.speak("utterance");
+    	window.speechSynthesis.speak(utterance);
     	utterance.onend=function(){
     	Y.style.background='#fff';
     	}
