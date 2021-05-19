@@ -322,6 +322,9 @@
     	})
     	Z.addEventListener("click", function(){
              
+            const utterance = new SpeechSynthesisUtterance();
+    	utterance.text = "Y";
+    	window.speechSynthesis.speak(utterance);
             Core.speak("A for apple");
     	})
         Core.speak("A for apple");
