@@ -305,10 +305,14 @@
     	})
     	X.addEventListener("click", function(){
     	
+            X.style.background='#39c81f';
     	const utterance = new SpeechSynthesisUtterance();
     	utterance.text = "X";
     	window.speechSynthesis.speak(utterance);
+    	utterance.onend=function(){
     	
+            X.style.background='#fff';
+    	}
     	
     	})
     	Y.addEventListener("click", function(){
