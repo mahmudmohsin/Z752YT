@@ -341,7 +341,7 @@
        
             Core.speak("A for apple");
     
-            speak.onend=function(){
+            speak.ended=function(){
     	
               A.style.background='#fff';
                 }
@@ -351,7 +351,7 @@
        
             Core.speak("B for ball");
     
-            Core.onend=function(){
+            Core.ended=function(){
     	
               B.style.background='#fff';
                 }
@@ -359,9 +359,9 @@
         
         C.addEventListener("click", function(){
        
-            Core.speak("C for cat");
+            Core.onended("C for cat");
     
-            Core.onend=function(){
+            Core.speakend=function(){
     	
               C.style.background='#fff';
                 }
